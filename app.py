@@ -15,7 +15,8 @@ def not_found(e):
     return "404: Yeah right, you wish, {0}.".format(choice(list_of_insults))
 
 def random_color():
-    a, b, c = (randint(30,255), randint(30,255), randint(30,255))
+    min_color, max_color = 100, 255
+    a, b, c = (randint(min_color, max_color), randint(min_color, max_color), randint(min_color, max_color))
     return f"({a}, {b}, {c})"
 
 def random_tidbit():
