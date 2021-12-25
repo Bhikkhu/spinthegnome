@@ -9,6 +9,11 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
+@app.errorhandler(404)
+def not_found(e):
+    list_of_insults = ["nincompoop", "dumby", "sport", "gabby"]
+    return "404: Yeah right, you wish, {0}.".format(choice(list_of_insults))
+
 def random_color():
     a, b, c = (randint(30,255), randint(30,255), randint(30,255))
     return f"({a}, {b}, {c})"
