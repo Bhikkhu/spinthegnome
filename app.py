@@ -9,6 +9,10 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
+@app.route('/faster')
+def faster():
+    return render_template("index.html", faster = True)
+
 @app.errorhandler(404)
 def not_found(e):
     list_of_insults = ["nincompoop", "dumby", "sport", "gabby"]
