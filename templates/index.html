@@ -20,6 +20,11 @@
 {% endif %}
   Your browser does not support the video tag.
 </video>
+{% if faster %}
+<a href="/">Slower</a>
+{% else %}
+<a href="/faster">Faster</a>
+{% endif %}
 </center>
 <h1>click the play button below for a <i>special</i> holiday message</h1>
 <audio controls autoplay>
