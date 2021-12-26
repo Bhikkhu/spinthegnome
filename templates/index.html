@@ -31,9 +31,11 @@
 <source src="{{ url_for('static', filename = "merry_christmas.wav")}}" type = "audio/wav">
 
 </audio>
-
+{% if faster %}
+<img src="{{ url_for('static', filename = "a_page.gif")}}" width = 200 />
+{% else %}
 <img src="{{ url_for('static', filename = "living.gif")}}" width = 200 />
-
+{% endif %}
 {% if faster %}
 {{ faster_forecast() }}
 {% else %}
