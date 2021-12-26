@@ -36,7 +36,8 @@ def your_new_year_forecast():
     	"alright i guess",
     	"simply stupendous nothing bad could possibly happen",
     	"probably become a hermit or something",
-    	"you will be promoted to eagle scout"]
+    	"you will be promoted to eagle scout",
+    	"i''m thinkin bout thos beans"]
     output += choice(outcomes)
     return output
 
@@ -44,7 +45,12 @@ def faster_forecast():
     output = "Your new year's forecast: "
     outcomes = ["CERTAIN DEATH",
     	"you will get a spik up ur butt",
-    	"you will be bit by monkeys more than you have in previous years"]
+    	"you will be bit by monkeys more than you have in previous years",
+    	"you will rob a baby at gunpoint for its candy",
+    	"BANISHMENT",
+    	"TRENCH WARFARE",
+    	"your eyeballs will be gouged out by a dropbear",
+    	"eat my frosted shitflakes"]
     output += choice(outcomes)
     return output
 
