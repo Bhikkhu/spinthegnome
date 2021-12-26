@@ -20,10 +20,13 @@
 {% endif %}
   Your browser does not support the video tag.
 </video>
+<br>
 {% if faster %}
 <a href="/">Slower</a>
+<img src="{{ url_for('static', filename = "snail.png")}}" width = 50 />
 {% else %}
 <a href="/faster">Faster</a>
+<img src="{{ url_for('static', filename = "gazelle.jpg")}}" width = 50 />
 {% endif %}
 </center>
 <h1>click the play button below for a <i>special</i> holiday message</h1>
