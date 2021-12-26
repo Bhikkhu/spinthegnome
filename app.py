@@ -43,7 +43,7 @@ def your_new_year_forecast():
 
 def faster_forecast():
     output = "Your new year's forecast: "
-    outcomes = ["<b>CERTAIN DEATH</b>",
+    outcomes = ["CERTAIN DEATH",
     	"you will get a spik up ur butt",
     	"you will be bit by monkeys more than you have in previous years",
     	"you will rob a baby at gunpoint for its candy",
