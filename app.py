@@ -34,15 +34,20 @@ def your_new_year_forecast():
     output = "Your new year's forecast: "
     outcomes = ["ABSOLUTE HOGWASH",
     	"alright i guess",
-    	"you will get a spik up ur butt",
     	"simply stupendous nothing bad could possibly happen",
     	"probably become a hermit or something",
-    	"you will be promoted to eagle scout",
-    	"you will be bit by monkeys more than you have in previous years",
-    	"CERTAIN DEATH"]
+    	"you will be promoted to eagle scout"]
+    output += choice(outcomes)
+    return output
+
+def faster_forecast():
+    output = "Your new year's forecast: "
+    outcomes = ["CERTAIN DEATH",
+    	"you will get a spik up ur butt",
+    	"you will be bit by monkeys more than you have in previous years"]
     output += choice(outcomes)
     return output
 
 
 app.jinja_env.globals.update(random_tidbit=random_tidbit, random_color=random_color)
-app.jinja_env.globals.update(your_new_year_forecast = your_new_year_forecast)
+app.jinja_env.globals.update(your_new_year_forecast = your_new_year_forecast, faster_forecast = faster_forecast)
